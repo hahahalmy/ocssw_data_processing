@@ -1,9 +1,9 @@
 #!/bin/bash
-export OCSSWROOT=/home/software/SeaDAS_8.3.0/ocssw
+export OCSSWROOT=/home/software/SeaDAS_9_1/ocssw
 source $OCSSWROOT/OCSSW_bash.env
 
-year=2002
-for i in $(seq 175 1 365) 
+year=2024
+for i in $(1 1 365) 
 do
 	ddd=$(echo $i | awk '{printf "%03d\n", $0 }')
 	for j in $(seq 0 1 23)
